@@ -23,7 +23,6 @@ SSDC2026039_Jaret Ini_Dashboard/
 │
 ├── SSDC2026039_Jaret Ini_Dashboard.py
 ├── requirements.txt
-├── README.md
 │
 ├── assets/
 │   └── logo.png
