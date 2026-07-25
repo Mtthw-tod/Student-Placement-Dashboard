@@ -19,7 +19,7 @@ Sebelum menjalankan aplikasi, pastikan komputer telah memiliki:
 Pastikan struktur folder tetap seperti berikut.
 
 ```
-Project/
+SSDC2026039_Jaret Ini_Dashboard/
 │
 ├── app_cdc.py
 ├── requirements.txt
@@ -49,7 +49,7 @@ Project/
 
 ## 1. Buka Folder Project
 
-Ekstrak file ZIP (jika masih terkompres), kemudian buka folder project yang berisi file **app_cdc.py**, **requirements.txt**, folder **assets**, dan folder **data**.
+Ekstrak file ZIP (jika masih terkompres), kemudian buka folder SSDC2026039_Jaret Ini_Dashboard yang berisi file **app_cdc.py**, **requirements.txt**, folder **assets**, dan folder **data**.
 
 ---
 
@@ -57,7 +57,7 @@ Ekstrak file ZIP (jika masih terkompres), kemudian buka folder project yang beri
 
 ### Cara Cepat Langsung dari File Explorer
 
-1. Buka folder project di **File Explorer**.
+1. Buka folder SSDC2026039_Jaret Ini_Dashboard di **File Explorer**.
 2. Klik pada **kolom alamat (Address Bar / Path Bar)** di bagian atas jendela File Explorer.
 3. Hapus seluruh isi kolom tersebut.
 4. Ketik:
@@ -73,7 +73,7 @@ Command Prompt (CMD) akan otomatis terbuka pada folder project sehingga tidak pe
 Contoh tampilan:
 
 ```text
-C:\Users\NamaUser\Documents\StudentPlacementDashboard>
+C:\Users\NamaUser\Documents\SSDC2026039_Jaret Ini_Dashboard>
 ```
 
 ---
