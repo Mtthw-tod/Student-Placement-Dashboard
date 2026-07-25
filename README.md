@@ -21,7 +21,7 @@ Pastikan struktur folder tetap seperti berikut.
 ```
 SSDC2026039_Jaret Ini_Dashboard/
 │
-├── app_cdc.py
+├── SSDC2026039_Jaret Ini_Dashboard.py
 ├── requirements.txt
 ├── README.md
 │
@@ -41,7 +41,7 @@ SSDC2026039_Jaret Ini_Dashboard/
 
 - Jangan mengubah nama folder.
 - Jangan mengubah nama file CSV.
-- Jangan memindahkan file `app_cdc.py`.
+- Jangan memindahkan file `SSDC2026039_Jaret Ini_Dashboard.py`.
 
 ---
 
@@ -49,7 +49,7 @@ SSDC2026039_Jaret Ini_Dashboard/
 
 ## 1. Buka Folder Project
 
-Ekstrak file ZIP (jika masih terkompres), kemudian buka folder SSDC2026039_Jaret Ini_Dashboard yang berisi file **app_cdc.py**, **requirements.txt**, folder **assets**, dan folder **data**.
+Ekstrak file ZIP (jika masih terkompres), kemudian buka folder SSDC2026039_Jaret Ini_Dashboard yang berisi file **SSDC2026039_Jaret Ini_Dashboard.py**, **requirements.txt**, folder **assets**, dan folder **data**.
 
 ---
 
@@ -95,19 +95,19 @@ Tunggu hingga seluruh proses instalasi selesai.
 Setelah instalasi selesai, jalankan aplikasi dengan perintah berikut:
 
 ```bash
-streamlit run app_cdc.py
+streamlit run SSDC2026039_Jaret Ini_Dashboard.py
 ```
 
 Apabila muncul pesan bahwa perintah `streamlit` tidak dikenali, gunakan salah satu perintah berikut:
 
 ```bash
-python -m streamlit run app_cdc.py
+python -m streamlit run SSDC2026039_Jaret Ini_Dashboard.py
 ```
 
 atau
 
 ```bash
-py -m streamlit run app_cdc.py
+py -m streamlit run SSDC2026039_Jaret Ini_Dashboard.py
 ```
 
 ---
