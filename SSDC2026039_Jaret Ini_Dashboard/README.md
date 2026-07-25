@@ -1,47 +1,139 @@
-# SSDC — CDC Dashboard (Streamlit)
+# Student Placement System (SSDC Dashboard)
 
-## Cara menjalankan
-1. Pastikan Python 3.9+ terpasang.
-2. Buka terminal di folder ini, lalu install dependency:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Jalankan aplikasi:
-   ```
-   streamlit run app_cdc.py
-   ```
-4. Browser akan otomatis terbuka ke `http://localhost:8501`.
+Dashboard ini merupakan aplikasi **Streamlit** yang dikembangkan sebagai sistem pendukung pengambilan keputusan (Decision Support System) bagi **Career Development Center (CDC)** dalam proses penempatan mahasiswa ke perusahaan mitra.
 
-## Struktur folder
+---
+
+# Persyaratan
+
+Sebelum menjalankan aplikasi, pastikan komputer telah memiliki:
+
+- Python 3.10 atau lebih baru
+- Koneksi internet (hanya diperlukan saat instalasi package)
+- Terminal / Command Prompt / PowerShell
+
+---
+
+# Struktur Folder
+
+Pastikan struktur folder tetap seperti berikut.
+
 ```
-streamlit_cdc_dashboard/
-├── app_cdc.py          # kode utama dashboard
+Project/
+│
+├── app_cdc.py
 ├── requirements.txt
 ├── README.md
-└── data/                # 6 CSV sumber data (sudah disertakan)
+│
+├── assets/
+│   └── logo.png
+│
+└── data/
     ├── company.csv
-    ├── talent_request.csv
-    ├── student_all.csv
     ├── status_student.csv
+    ├── student_all.csv
+    ├── talent_request.csv
     ├── tracking_company.csv
     └── tracking_student.csv
 ```
 
-Kalau ingin memakai data yang lebih baru, cukup ganti isi file CSV di folder `data/`
-dengan nama file yang sama — dashboard akan otomatis membaca ulang saat direfresh.
+**Penting**
 
-## Fitur
-- Filter global di sidebar: periode talent request, jenis penempatan, sektor industri, program studi.
-- 5 tab sesuai business task (BT-01 s.d. BT-08):
-  1. **Ringkasan** — KPI eksekutif, trend, top prodi placement
-  2. **Permintaan & Matching** — volume request, skema kerja, daftar prioritas talent request
-  3. **Pipeline Seleksi** — funnel tahapan seleksi, catatan kualitas data
-  4. **Ghosting & Follow-up** — perusahaan paling sering ghosting vs acceptance rate terbaik
-  5. **Kesiapan Mahasiswa** — eligibility checklist, IPK, domisili, alasan belum eligible
-- Tombol unduh CSV hasil filter (talent request & mahasiswa eligible).
+- Jangan mengubah nama folder.
+- Jangan mengubah nama file CSV.
+- Jangan memindahkan file `app_cdc.py`.
 
-## Catatan
-Ini adalah versi untuk sudut pandang **Career Development Center (CDC)**.
-Versi untuk sudut pandang pelamar/mahasiswa dan perusahaan mitra dapat dibuat
-menyusul dengan struktur multi-page (`pages/2_Pelamar.py`, `pages/3_Perusahaan.py`)
-yang memfilter data berdasarkan NIM atau id_company.
+---
+
+# Langkah Menjalankan Dashboard
+
+## 1. Buka Folder Project
+
+Ekstrak file ZIP (jika masih terkompres), kemudian buka folder project yang berisi file **app_cdc.py**, **requirements.txt**, folder **assets**, dan folder **data**.
+
+---
+
+## 2. Buka Command Prompt (CMD)
+
+### Cara Cepat Langsung dari File Explorer
+
+1. Buka folder project di **File Explorer**.
+2. Klik pada **kolom alamat (Address Bar / Path Bar)** di bagian atas jendela File Explorer.
+3. Hapus seluruh isi kolom tersebut.
+4. Ketik:
+
+```text
+cmd
+```
+
+5. Tekan **Enter**.
+
+Command Prompt (CMD) akan otomatis terbuka pada folder project sehingga tidak perlu menggunakan perintah `cd`.
+
+Contoh tampilan:
+
+```text
+C:\Users\NamaUser\Documents\StudentPlacementDashboard>
+```
+
+---
+
+## 3. Install Dependency
+
+Pada Command Prompt yang telah terbuka, jalankan perintah berikut:
+
+```bash
+pip install -r requirements.txt
+```
+
+Tunggu hingga seluruh proses instalasi selesai.
+
+---
+
+## 4. Jalankan Dashboard
+
+Setelah instalasi selesai, jalankan aplikasi dengan perintah berikut:
+
+```bash
+streamlit run app_cdc.py
+```
+
+Apabila muncul pesan bahwa perintah `streamlit` tidak dikenali, gunakan salah satu perintah berikut:
+
+```bash
+python -m streamlit run app_cdc.py
+```
+
+atau
+
+```bash
+py -m streamlit run app_cdc.py
+```
+
+---
+
+## 5. Dashboard Akan Terbuka
+
+Apabila berhasil dijalankan, terminal akan menampilkan alamat seperti berikut:
+
+```text
+Local URL: http://localhost:8501
+```
+
+Browser biasanya akan terbuka secara otomatis. Jika tidak, salin alamat tersebut ke browser untuk membuka dashboard.
+
+# Fitur Dashboard
+
+Dashboard menyediakan berbagai analisis, di antaranya:
+
+- Executive Dashboard
+- Talent Request Analysis
+- Talent Matching
+- Recruitment Pipeline Monitoring
+- Ghosting Detection
+- Student Readiness Analysis
+- Recommendation System (Decision Support)
+- Executive Decision Panel
+- Export Executive Report (PDF)
+
+---
